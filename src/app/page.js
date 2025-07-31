@@ -1,103 +1,147 @@
+"use client";
+
+import { useEffect } from "react";
+import { motion } from "framer-motion";
 import Image from "next/image";
 
-export default function Home() {
-  return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              src/app/page.js
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+const banner = "/banner.jpg";
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+export default function Home() {
+  useEffect(() => {
+    document.documentElement.style.scrollBehavior = "smooth";
+  }, []);
+
+  const sections = [
+    {
+      title: "About Me",
+      text: [ 
+      "I’m a multidisciplinary creative blending design, video, branding, and AI to craft compelling digital experiences. With roots in traditional graphic design and a career spanning print, web, and video, I’ve evolved with the times—integrating emerging technologies like AI-generated assets, 3D models in webGL, and custom development into my creative toolkit.",
+
+"I run several YouTube channels as creative laboratories, experimenting with storytelling through AI-generated content. This includes music videos featuring original lyrics, AI vocals, and scenes filmed in virtual worlds like Second Life—where I combine visual design, narrative, and innovation to push the boundaries of art and technology.",
+
+"My background includes years of agency and freelance work—from junior designer to creative director—alongside entrepreneurial experience running an online business. This unique blend gives me both a strategic eye and a deep understanding of how design and content function within a brand ecosystem."
+      ],
+      img: "/images/about.jpg",
+    },
+    {
+      title: "Work",
+  text: [
+    <>
+      I build immersive and interactive web experiences using modern technologies like JavaScript, React, and Three.js.
+    </>,
+    <>
+      I also edit and apply motion design to video. As a hobby, I enjoy machinima and run the{" "}
+      <a
+        href="https://Iamavamusic.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-lime-500 underline hover:text-lime-700"
+      >
+        I am AVA youtube channel
+      </a>{" "}
+      to showcase those creations.
+    </>,
+    <>
+      Additionally, I have a long history as a fine artist and illustrator.
+    </>,
+  ],
+      img: "/images/work.jpg",
+    },
+    {
+      title: "The Cubie Folks",
+      text: [
+        <>
+        Once upon a time I made a whole cubie world full of cubie people (aka voxel models). The NFTs of those animated scenes can be found{" "}
+        <a
+        href="https://foundation.app/@Pixel-Farmer"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-lime-500 underline hover:text-lime-700"
+      >
+         here.
+      </a>{" "}
+      </>,
+        ],
+        
+      img: "/images/contact.jpg",
+    },
+  ];
+
+  return (
+    <main className="bg-white text-gray-800">
+      {/* Hero Banner */}
+      <section className="w-full h-[60vh] relative">
+        <Image
+          src={banner}
+          alt="Banner"
+          width={1500}
+          height={500}
+          className="w-full h-auto"
+        />
+<div className="absolute inset-0 flex flex-col items-start mt-20 ml-20">
+  <h1 className="text-2xl md:text-4xl text-white font-thin">Pixel Farmer</h1>
+  <p className="text-white">(aka Lawn Walker)</p>
+</div>
+      </section>
+
+      {/* Content Sections */}
+      {sections.map((section, i) => (
+        <section
+          key={i}
+          className={`flex flex-col md:flex-row ${i % 2 === 1 ? "md:flex-row-reverse" : ""} items-center py-16 px-6 md:px-20 gap-8`}
+        >
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="md:w-1/2 text-center md:text-left"
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+            {/* <h2 className="text-2xl md:text-3xl font-semibold mb-4">{section.title}</h2> */}
+            <h2
+              className={`${
+                section.title === "About Me"
+                  ? "text-lime-500"
+                  : section.title === "Work"
+                  ? "text-orange-500"
+                  : section.title === "The Cubie Folks"
+                  ? "text-sky-400"
+                  : ""
+              } text-2xl md:text-3xl font-semibold mb-4`}
+            >
+              {section.title}
+            </h2>
+              {section.text.map((para, idx) => (
+              <p key={idx} className="text-lg text-gray-600 mb-6 leading-relaxed">
+                {para}
+              </p>
+            ))}
+
+            {/* <p className="text-lg text-gray-600">{section.text}</p> */}
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.6 }}
+            className="md:w-1/2"
           >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+            <div className="w-[800px] h-[600px] rounded-lg overflow-hidden shadow-lg">
+              <Image
+                src={section.img}
+                alt={section.title}
+                width={800}
+                height={600}
+                className="w-full h-full object-cover"
+              />
+            </div>
+          </motion.div>
+        </section>
+      ))}
+
+      {/* Footer */}
+      <footer className="text-center text-sm text-gray-500 py-10">
+        &copy; {new Date().getFullYear()} Pixel Farmer. All rights reserved.
       </footer>
-    </div>
+    </main>
   );
 }
