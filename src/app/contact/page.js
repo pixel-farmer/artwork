@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -31,13 +32,13 @@ export default function Contact() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-4">
             <div className="flex items-center">
-              <a href="/" className="text-2xl font-bold text-gray-900">PixelFarmer</a>
+              <Link href="/" className="text-2xl font-bold text-gray-900">PixelFarmer</Link>
             </div>
             <nav className="hidden md:flex space-x-8">
-              <a href="/" className="text-gray-600 hover:text-gray-900">Home</a>
-              <a href="/work" className="text-gray-600 hover:text-gray-900">Work</a>
-              <a href="/shop" className="text-gray-600 hover:text-gray-900">Shop</a>
-              <a href="/contact" className="text-gray-900 font-medium">Contact</a>
+              <Link href="/" className="text-gray-600 hover:text-gray-900">Home</Link>
+              <Link href="/work" className="text-gray-600 hover:text-gray-900">Work</Link>
+              <Link href="/shop" className="text-gray-600 hover:text-gray-900">Shop</Link>
+              <Link href="/contact" className="text-gray-900 font-medium">Contact</Link>
             </nav>
           </div>
         </div>
@@ -204,8 +205,8 @@ export default function Contact() {
             <div className="bg-gray-50 rounded-lg p-6">
               <h3 className="font-semibold text-gray-900 mb-4">Quick Links</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <a href="/shop" className="text-blue-600 hover:text-blue-800 font-medium">Shop Our Products</a>
-                <a href="/work" className="text-blue-600 hover:text-blue-800 font-medium">View Our Operations</a>
+                <Link href="/shop" className="text-blue-600 hover:text-blue-800 font-medium">Shop Our Products</Link>
+                <Link href="/work" className="text-blue-600 hover:text-blue-800 font-medium">View Our Operations</Link>
                 <a href="#" className="text-blue-600 hover:text-blue-800 font-medium">Farming Guide</a>
                 <a href="#" className="text-blue-600 hover:text-blue-800 font-medium">Support Center</a>
               </div>

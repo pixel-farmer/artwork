@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 
 const banner = "/banner.jpg";
 
@@ -46,13 +47,13 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-4">
             <div className="flex items-center">
-              <h1 className="text-2xl font-bold text-gray-900">PixelFarmer</h1>
+              <Link href="/" className="text-2xl font-bold text-gray-900">PixelFarmer</Link>
             </div>
             <nav className="hidden md:flex space-x-8">
-              <a href="/" className="text-gray-900 font-medium">Home</a>
-              <a href="/work" className="text-gray-600 hover:text-gray-900">Work</a>
-              <a href="/shop" className="text-gray-600 hover:text-gray-900">Shop</a>
-              <a href="/contact" className="text-gray-600 hover:text-gray-900">Contact</a>
+              <Link href="/" className="text-gray-900 font-medium">Home</Link>
+              <Link href="/work" className="text-gray-600 hover:text-gray-900">Work</Link>
+              <Link href="/shop" className="text-gray-600 hover:text-gray-900">Shop</Link>
+              <Link href="/contact" className="text-gray-600 hover:text-gray-900">Contact</Link>
             </nav>
           </div>
         </div>
@@ -60,10 +61,11 @@ export default function Home() {
 
       {/* Hero Banner */}
       <section className="w-full h-[60vh] relative bg-transparent">
-        <img
+        <Image
           src={banner}
           alt="Banner"
-          className="w-full h-full object-cover"
+          fill
+          className="object-cover"
         />
         {/* <div className="absolute inset-0 bg-black bg-opacity-20"></div> */}
         {/* Text overlay removed for GLB file placement */}
@@ -136,12 +138,12 @@ export default function Home() {
             <p className="text-gray-600 mb-6 leading-relaxed">
               We believe in responsible farming practices, innovative processing techniques, and maintaining the delicate balance of the digital ecosystem. Every cube we produce meets our rigorous quality standards and sustainability requirements.
             </p>
-            <a
+            <Link
               href="/work"
               className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
             >
               Learn More About Our Work
-            </a>
+            </Link>
           </motion.div>
           
           <motion.div
@@ -168,18 +170,18 @@ export default function Home() {
           <h2 className="text-3xl font-bold mb-4">Ready to Experience Premium Cubes?</h2>
           <p className="text-xl mb-8">Join thousands of satisfied customers who trust PixelFarmer for their cube needs.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
+            <Link
               href="/shop"
               className="bg-white text-gray-900 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
             >
               Shop Now
-            </a>
-            <a
+            </Link>
+            <Link
               href="/contact"
               className="bg-transparent text-white border-2 border-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-gray-900 transition-colors"
             >
               Contact Us
-            </a>
+            </Link>
           </div>
         </div>
       </section>
@@ -195,8 +197,8 @@ export default function Home() {
             <div>
               <h4 className="font-semibold mb-4">Operations</h4>
               <ul className="space-y-2 text-gray-300">
-                <li><a href="/work" className="hover:text-white">Our Facilities</a></li>
-                <li><a href="/shop" className="hover:text-white">Shop Products</a></li>
+                <li><Link href="/work" className="hover:text-white">Our Facilities</Link></li>
+                <li><Link href="/shop" className="hover:text-white">Shop Products</Link></li>
                 <li><a href="#" className="hover:text-white">Farming Guide</a></li>
                 <li><a href="#" className="hover:text-white">Sustainability</a></li>
               </ul>
@@ -204,7 +206,7 @@ export default function Home() {
             <div>
               <h4 className="font-semibold mb-4">Support</h4>
               <ul className="space-y-2 text-gray-300">
-                <li><a href="/contact" className="hover:text-white">Contact</a></li>
+                <li><Link href="/contact" className="hover:text-white">Contact</Link></li>
                 <li><a href="#" className="hover:text-white">FAQ</a></li>
                 <li><a href="#" className="hover:text-white">Shipping</a></li>
                 <li><a href="#" className="hover:text-white">Returns</a></li>
