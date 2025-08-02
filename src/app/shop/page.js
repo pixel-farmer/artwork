@@ -47,7 +47,7 @@ export default function Shop() {
       price: 199.99,
       image: "/images/cubes-farming-tools.jpg",
       category: "Tools",
-      description: "Professional-grade tools for processing and refining raw cubes into premium products"
+      description: "Because hand-whittling cubes went out of style in 1847 (trust us, we checked)"
     },
     {
       id: 5,
@@ -71,7 +71,7 @@ export default function Shop() {
       price: 19.99,
       image: "/images/cubes-rare-red.jpg",
       category: "Rare",
-      description: "Certified organic cube seeds for sustainable farming operations"
+      description: "Rumored to grant wishes, but mostly just sit there being cubical"
     },
     {
       id: 8,
@@ -91,7 +91,7 @@ export default function Shop() {
     }
   ];
 
-  const categories = ["All", "Collections", "Rare", "Kits", "Tools", "Experiences", "Apparel"];
+  const categories = ["All", "Collections", "Rare", "Kits", "Tools", "Apparel"];
 
   const filteredProducts = selectedCategory === "All" 
     ? products 
