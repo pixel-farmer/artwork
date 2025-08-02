@@ -4,10 +4,9 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
+import Header from "./components/Header";
 
 const banner = "/banner.jpg";
-
-const logo = "/pixel-farmer-logo.jpg";
 
 export default function Home() {
   useEffect(() => {
@@ -44,24 +43,7 @@ export default function Home() {
 
   return (
     <main className="bg-white text-gray-800">
-      {/* Header */}
-      <header className="bg-white shadow-sm sticky top-0 z-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center py-4">
-            <div className="flex items-center">
-              <Link href="/" className="">
-                <Image src={logo} alt="PixelFarmer Logo" width={300} height={40} />
-              </Link>
-            </div>
-            <nav className="hidden md:flex space-x-8">
-              <Link href="/" className="text-gray-900 font-medium">Home</Link>
-              <Link href="/work" className="text-gray-600 hover:text-gray-900">Work</Link>
-              <Link href="/shop" className="text-gray-600 hover:text-gray-900">Shop</Link>
-              <Link href="/contact" className="text-gray-600 hover:text-gray-900">Contact</Link>
-            </nav>
-          </div>
-        </div>
-      </header>
+      <Header />
 
       {/* Hero Banner */}
       <section className="w-full h-[60vh] relative bg-transparent">

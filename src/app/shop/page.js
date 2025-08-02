@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import Cart from "../components/Cart";
+import ShopHeader from "../components/ShopHeader";
 
 export default function Shop() {
   const [cartCount, setCartCount] = useState(0);
@@ -39,7 +40,7 @@ export default function Shop() {
       price: 24.99,
       image: "/images/cubes-farming-kit.jpg",
       category: "Kits",
-      description: "Everything you need to start your own cubie farming operation at home"
+      description: "Everything you need to disappoint your neighbors with strange geometric crops"
     },
     {
       id: 4,
@@ -142,42 +143,11 @@ export default function Shop() {
 
   return (
     <main className="bg-white text-gray-800">
-      {/* Header */}
-      <header className="bg-white shadow-sm sticky top-0 z-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center py-4">
-            <div className="flex items-center">
-              <Link href="/" className="text-2xl font-bold text-gray-900">PixelFarmer</Link>
-            </div>
-            <nav className="hidden md:flex space-x-8">
-              <Link href="/" className="text-gray-600 hover:text-gray-900">Home</Link>
-              <Link href="/work" className="text-gray-600 hover:text-gray-900">Work</Link>
-              <Link href="/shop" className="text-gray-900 font-medium">Shop</Link>
-              <Link href="/contact" className="text-gray-600 hover:text-gray-900">Contact</Link>
-            </nav>
-            <div className="flex items-center space-x-4">
-              <button className="relative p-2">
-                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                </svg>
-              </button>
-              <button 
-                className="relative p-2"
-                onClick={() => setIsCartOpen(!isCartOpen)}
-              >
-                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 3h2l.4 2M7 13h10l4-8H5.4m0 0L7 13m0 0l-2.5 5M7 13l2.5 5m6-5v6a2 2 0 01-2 2H9a2 2 0 01-2-2v-6m6 0V9a2 2 0 00-2-2H9a2 2 0 00-2 2v4.01" />
-                </svg>
-                {cartCount > 0 && (
-                  <span className="absolute -top-1 -right-1 bg-red-500 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">
-                    {cartCount}
-                  </span>
-                )}
-              </button>
-            </div>
-          </div>
-        </div>
-      </header>
+      <ShopHeader 
+        cartCount={cartCount}
+        setIsCartOpen={setIsCartOpen}
+        isCartOpen={isCartOpen}
+      />
 
       {/* Hero Section */}
       <section className="bg-gradient-to-r from-green-600 to-blue-600 text-white py-20">

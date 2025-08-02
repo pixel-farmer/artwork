@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
+import Header from "../components/Header";
 
 export default function Work() {
   const projects = [
@@ -58,22 +59,7 @@ export default function Work() {
 
   return (
     <main className="bg-white text-gray-800">
-      {/* Header */}
-      <header className="bg-white shadow-sm sticky top-0 z-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center py-4">
-            <div className="flex items-center">
-              <Link href="/" className="text-2xl font-bold text-gray-900">PixelFarmer</Link>
-            </div>
-            <nav className="hidden md:flex space-x-8">
-              <Link href="/" className="text-gray-600 hover:text-gray-900">Home</Link>
-              <Link href="/work" className="text-gray-900 font-medium">Work</Link>
-              <Link href="/shop" className="text-gray-600 hover:text-gray-900">Shop</Link>
-              <Link href="/contact" className="text-gray-600 hover:text-gray-900">Contact</Link>
-            </nav>
-          </div>
-        </div>
-      </header>
+      <Header currentPage="work" />
 
       {/* Hero Section */}
       <section className="bg-gradient-to-r from-blue-600 to-purple-600 text-white py-20">
