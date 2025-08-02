@@ -31,7 +31,7 @@ export default function Contact() {
       <Header currentPage="contact" />
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-orange-600 to-red-600 text-white py-20">
+      <section className="bg-gradient-to-r from-orange-600 to-orange-400 text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.h1 
             initial={{ opacity: 0, y: 20 }}
@@ -109,13 +109,13 @@ export default function Contact() {
                   onChange={handleInputChange}
                   required
                   rows={6}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-sky-500 focus:border-transparent"
                 ></textarea>
               </div>
               
               <button
                 type="submit"
-                className="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
+                className="w-full bg-sky-500 text-white py-3 rounded-lg font-semibold hover:bg-sky-500 transition-colors"
               >
                 Send Message
               </button>
