@@ -21,7 +21,7 @@ export default function Shop() {
       id: 1,
       name: "Premium Cubie Collection",
       price: 89.99,
-      image: "/images/about.jpg",
+      image: "/images/cubes-premium.jpg",
       category: "Collections",
       description: "Hand-crafted collection of our finest cubie specimens, carefully selected from our farms"
     },
@@ -29,7 +29,7 @@ export default function Shop() {
       id: 2,
       name: "Rare Voxel Varieties",
       price: 149.99,
-      image: "/images/work.jpg",
+      image: "/images/cubes-rare.jpg",
       category: "Rare",
       description: "Exclusive collection of rare and limited-edition voxel cubes from our experimental breeding program"
     },
@@ -37,7 +37,7 @@ export default function Shop() {
       id: 3,
       name: "Cubie Farming Starter Kit",
       price: 24.99,
-      image: "/images/contact.jpg",
+      image: "/images/cubes-farming-kit.jpg",
       category: "Kits",
       description: "Everything you need to start your own cubie farming operation at home"
     },
@@ -45,7 +45,7 @@ export default function Shop() {
       id: 4,
       name: "Industrial Cube Processing Tools",
       price: 199.99,
-      image: "/images/about.jpg",
+      image: "/images/cubes-farming-tools.jpg",
       category: "Tools",
       description: "Professional-grade tools for processing and refining raw cubes into premium products"
     },
@@ -54,7 +54,7 @@ export default function Shop() {
       name: "Cubie World Experience Pass",
       price: 79.99,
       image: "/images/work.jpg",
-      category: "Experiences",
+      category: "Collections",
       description: "Virtual tour of our cubie farming facilities and processing plants"
     },
     {
@@ -62,15 +62,15 @@ export default function Shop() {
       name: "Cubie Farming Guide",
       price: 39.99,
       image: "/images/contact.jpg",
-      category: "Education",
+      category: "Collections",
       description: "Comprehensive guide to cubie farming techniques and best practices"
     },
     {
       id: 7,
-      name: "Organic Cube Seeds",
+      name: "Rare Red Cubes",
       price: 19.99,
-      image: "/images/about.jpg",
-      category: "Seeds",
+      image: "/images/cubes-rare-red.jpg",
+      category: "Rare",
       description: "Certified organic cube seeds for sustainable farming operations"
     },
     {
@@ -86,12 +86,12 @@ export default function Shop() {
       name: "Cube Storage Solutions",
       price: 129.99,
       image: "/images/contact.jpg",
-      category: "Storage",
+      category: "Collections",
       description: "Climate-controlled storage units for preserving cube quality and freshness"
     }
   ];
 
-  const categories = ["All", "Collections", "Rare", "Kits", "Tools", "Experiences", "Education", "Seeds", "Apparel", "Storage"];
+  const categories = ["All", "Collections", "Rare", "Kits", "Tools", "Experiences", "Apparel"];
 
   const filteredProducts = selectedCategory === "All" 
     ? products 

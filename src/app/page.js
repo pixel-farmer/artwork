@@ -7,6 +7,8 @@ import Link from "next/link";
 
 const banner = "/banner.jpg";
 
+const logo = "/pixel-farmer-logo.jpg";
+
 export default function Home() {
   useEffect(() => {
     document.documentElement.style.scrollBehavior = "smooth";
@@ -17,19 +19,19 @@ export default function Home() {
       title: "Sustainable Cube Farming",
       description: "Our cubie people use eco-friendly methods to grow and harvest premium cubes, ensuring the highest quality while protecting the digital environment.",
       icon: "🌱",
-      color: "text-green-600"
+      color: "text-lime-500"
     },
     {
       title: "Advanced Processing",
       description: "State-of-the-art facilities where raw cubes are transformed into high-quality voxel products using cutting-edge technology.",
       icon: "⚙️",
-      color: "text-blue-600"
+      color: "text-orange-400"
     },
     {
       title: "Global Distribution",
       description: "Worldwide network ensuring fresh cubes reach customers everywhere, with climate-controlled shipping and real-time tracking.",
       icon: "🌍",
-      color: "text-purple-600"
+      color: "text-sky-500"
     }
   ];
 
@@ -47,7 +49,9 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-4">
             <div className="flex items-center">
-              <Link href="/" className="text-2xl font-bold text-gray-900">PixelFarmer</Link>
+              <Link href="/" className="">
+                <Image src={logo} alt="PixelFarmer Logo" width={300} height={40} />
+              </Link>
             </div>
             <nav className="hidden md:flex space-x-8">
               <Link href="/" className="text-gray-900 font-medium">Home</Link>
@@ -74,7 +78,7 @@ export default function Home() {
       {/* Features Section */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">Why Choose PixelFarmer?</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">Why Choose <span className="text-lime-500">Pixel</span><span className="text-orange-400">Farmer</span>?</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
             Our commitment to quality, sustainability, and innovation makes us the leading cubie farming operation in the digital world.
           </p>
@@ -131,7 +135,7 @@ export default function Home() {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-3xl font-bold text-gray-900 mb-6">About Our Cubie Operations</h2>
+            <h2 className="text-3xl font-bold text-lime-500 mb-6">About Our Cubie Operations</h2>
             <p className="text-gray-600 mb-6 leading-relaxed">
               Founded in the early days of the digital revolution, PixelFarmer has been at the forefront of sustainable cubie farming for over a decade. Our dedicated team of cubie workers operates around the clock to ensure the highest quality cubes reach our customers worldwide.
             </p>
