@@ -52,19 +52,19 @@ export default function Shop() {
     },
     {
       id: 5,
-      name: "Cubie World Experience Pass",
+      name: "Basic Cube Collection",
       price: 79.99,
-      image: "/images/work.jpg",
+      image: "/images/cubes-basic.jpg",
       category: "Collections",
-      description: "Virtual tour of our cubie farming facilities and processing plants"
+      description: "Perfect cubes for beginners who still think rectangles are acceptable"
     },
     {
       id: 6,
-      name: "Cubie Farming Guide",
+      name: "Mini Cube Collection",
       price: 39.99,
-      image: "/images/contact.jpg",
+      image: "/images/cubes-mini.jpg",
       category: "Collections",
-      description: "Comprehensive guide to cubie farming techniques and best practices"
+      description: "Pocket-sized cubes perfect for people with commitment issues"
     },
     {
       id: 7,
@@ -78,17 +78,17 @@ export default function Shop() {
       id: 8,
       name: "Cubie Worker Uniform",
       price: 59.99,
-      image: "/images/work.jpg",
+      image: "/images/cubie-uniforms.jpg",
       category: "Apparel",
-      description: "Official PixelFarmer cubie worker uniform with safety features"
+      description: "Official PixelFarmer cubie worker uniform with safety features like pockets and the illusion of professionalism"
     },
     {
       id: 9,
-      name: "Cube Storage Solutions",
+      name: "One Big Cube",
       price: 129.99,
-      image: "/images/contact.jpg",
+      image: "/images/one-big-cube.jpg",
       category: "Collections",
-      description: "Climate-controlled storage units for preserving cube quality and freshness"
+      description: "For when regular cubes just aren't compensating for whatever you're compensating for"
     }
   ];
 
