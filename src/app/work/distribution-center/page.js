@@ -42,14 +42,17 @@ export default function DistributionCenter() {
           >
             <h2 className="text-3xl font-bold text-gray-900 mb-6">Global Logistics Excellence</h2>
             <p className="text-gray-600 mb-6 leading-relaxed">
-              Our distribution center is the nerve center of our worldwide cube delivery network. Here, 
-              cubes from all our facilities are received, sorted, and prepared for shipment to customers 
-              across the digital globe.
+            Our distribution center is the chaotic nerve center of our worldwide cube delivery network, where 
+            cubes go to experience existential dread before shipping. Here, cubes from all our facilities are 
+            received, judged harshly by our sorting team, and either deemed worthy of shipment or sentenced to 
+            the &apos;Reject Cube Pile of Shame.&apos;
             </p>
             <p className="text-gray-600 mb-6 leading-relaxed">
-              The facility features automated sorting systems, climate-controlled storage units, and 
-              advanced tracking technology. Our logistics team ensures every cube reaches its destination 
-              in perfect condition, maintaining the highest standards of quality throughout the journey.
+            The facility features automated sorting systems that we&apos;re 73% confident actually work, climate-controlled 
+            storage units maintained at the perfect temperature for cube depression, and advanced tracking technology 
+            that occasionally knows where your package is. Our logistics team of highly caffeinated cubie workers 
+            ensures every cube reaches its destination in mostly perfect condition, maintaining standards so high that 
+            even we&apos;re not sure what they are.
             </p>
             <div className="flex flex-wrap gap-4">
               <span className="bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm font-medium">

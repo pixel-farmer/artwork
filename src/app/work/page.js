@@ -70,7 +70,7 @@ export default function Work() {
       id: 6,
       title: "Sustainable Cube Farm",
       description: "Eco-friendly farming operation using renewable energy and organic cube cultivation methods. Zero-waste processing and carbon-neutral operations.",
-      image: "/images/contact.jpg",
+      image: "/images/sustainable.jpg",
       category: "Sustainability",
       year: "2024"
     }

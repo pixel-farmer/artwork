@@ -47,19 +47,24 @@ export default function FarmOperations() {
             upon rows of developing cubes.
             </p>
             <p className="text-gray-600 mb-6 leading-relaxed">
-            <b>Automated Irrigation Systems:</b> Precisely calibrated to deliver the exact amount of moisture needed for optimal cube corner development.
+            <b>Automated Irrigation Systems:</b> Precisely calibrated to deliver the exact amount of moisture needed for 
+            optimal cube corner development.
             </p>
             <p className="text-gray-600 mb-6 leading-relaxed">
-            <b>Climate-Controlled Growing Domes:</b> Maintained at a perfect 72°F because cubes are surprisingly temperamental about temperature.
+            <b>Climate-Controlled Growing Domes:</b> Maintained at a perfect 72°F because cubes are surprisingly temperamental 
+            about temperature.
             </p>
             <p className="text-gray-600 mb-6 leading-relaxed">
-            <b>Geometric Quality Assurance:</b> Every cube is measured by our crack team of inspectors armed with rulers and unrealistic expectations.
+            <b>Geometric Quality Assurance:</b> Every cube is measured by our crack team of inspectors armed with rulers 
+            and unrealistic expectations.
             </p>
             <p className="text-gray-600 mb-6 leading-relaxed">
-            <b>Sustainable Practices:</b> 100% organic cube fertilizer (we don't ask what's in it, the cubies handle procurement).
+            <b>Sustainable Practices:</b> 100% organic cube fertilizer (we don&apos;t ask what&apos;s in it, the cubies handle procurement).
             </p>
             <p className="text-gray-600 mb-6 leading-relaxed">
-            <b>Daily Operations:</b> Our cubie workforce starts each day with mandatory geometry exercises to keep their spatial reasoning sharp. The morning shift focuses on planting new cube seeds in perfectly aligned rows, while the afternoon crew handles harvesting mature cubes using specialized extraction tools that definitely don't look like oversized spatulas.
+            <b>Daily Operations:</b> Our cubie workforce starts each day with mandatory geometry exercises to keep their 
+            spatial reasoning sharp. The morning shift focuses on planting new cube seeds in perfectly aligned rows, while the 
+            afternoon crew handles harvesting mature cubes using specialized extraction tools that definitely don&apos;t look like oversized spatulas.
             </p>
             <div className="flex flex-wrap gap-4">
               <span className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">
@@ -94,7 +99,9 @@ export default function FarmOperations() {
               className="mt-4 text-left"
             >
                 <p className="text-gray-600 mb-6 leading-relaxed">
-                <b>Daily Operations:</b> Our cubie workforce starts each day with mandatory geometry exercises to keep their spatial reasoning sharp. The morning shift focuses on planting new cube seeds in perfectly aligned rows, while the afternoon crew handles harvesting mature cubes using specialized extraction tools that definitely don't look like oversized spatulas.
+                <b>Daily Operations:</b> Our cubie workforce starts each day with mandatory geometry exercises to keep their spatial reasoning 
+                sharp. The morning shift focuses on planting new cube seeds in perfectly aligned rows, while the afternoon crew handles 
+                harvesting mature cubes using specialized extraction tools that definitely don&apos;t look like oversized spatulas.
               </p>
               <p className="text-gray-600 mb-6 leading-relaxed">
                 <b>Safety Record:</b> Only 3 cube-related injuries this quarter (all minor geometric confusion incidents).

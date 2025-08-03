@@ -42,14 +42,16 @@ export default function ResearchLab() {
           >
             <h2 className="text-3xl font-bold text-gray-900 mb-6">Innovation at the Core</h2>
             <p className="text-gray-600 mb-6 leading-relaxed">
-              Our research lab is the heart of innovation in cube farming technology. Here, our brilliant 
-              cubie scientists work tirelessly to develop new cube varieties, improve cultivation methods, 
-              and push the boundaries of what's possible in digital agriculture.
+            Our research lab is the heart of innovation in cube farming technology, where our brilliant cubie scientists work 
+            tirelessly to answer questions nobody asked. Here, they develop new cube varieties that serve no practical purpose, 
+            improve cultivation methods that weren&apos;t broken, and push the boundaries of what&apos;s possible when you have too much 
+            time and questionable funding.
             </p>
             <p className="text-gray-600 mb-6 leading-relaxed">
-              The facility houses cutting-edge laboratories, experimental growing chambers, and advanced 
-              analysis equipment. Our research team collaborates with leading digital universities and 
-              agricultural institutions to stay at the forefront of cube farming technology.
+            The facility houses cutting-edge laboratories filled with expensive equipment that mostly beeps impressively, experimental 
+            growing chambers where cubes are subjected to jazz music and motivational speeches, and advanced analysis equipment that can 
+            measure a cube&apos;s emotional state down to the decimal. Our research team collaborates with leading digital universities 
+            (University of Pixelton and Voxel Tech) to stay at the forefront of cube farming technology that may or may not exist.
             </p>
             <div className="flex flex-wrap gap-4">
               <span className="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-medium">
@@ -85,32 +87,32 @@ export default function ResearchLab() {
             {[
               {
                 title: "Cube Genetics",
-                description: "Studying cube DNA to develop new varieties with enhanced properties and improved yield.",
+                description: "Studying cube DNA to unlock the genetic secrets of superior geometric performance. Our scientists have discovered that cubes possess surprisingly complex emotional heredity - some inherit anxiety from their corner ancestors, while others develop generational trauma from being stacked improperly.",
                 icon: "🧬"
               },
               {
                 title: "Growth Optimization",
-                description: "Researching optimal growing conditions and techniques to maximize cube quality and quantity.",
+                description: "Researching optimal growing conditions to maximize cube perfection. Current findings: cubes grow 23% better when complimented daily, prefer classical music over death metal, and absolutely refuse to develop properly when being watched by impatient farmers.",
                 icon: "📈"
               },
               {
                 title: "Disease Resistance",
-                description: "Developing cube varieties that are resistant to digital pests and environmental stresses.",
+                description: "Developing cube varieties immune to digital pests and environmental drama. Recent breakthroughs include cubes resistant to pixel rot, corner-eating viruses, and the devastating 'geometric identity crisis syndrome' that turns perfect cubes into sad, lumpy disappointments.",
                 icon: "🛡️"
               },
               {
                 title: "Sustainability",
-                description: "Creating eco-friendly farming methods that minimize environmental impact.",
+                description: "Developing guilt-free farming practices because Mother Earth is watching. Our zero-waste cube production recycles rejected squares, composts geometric failures, and powers our facilities with the collective disappointment of imperfect harvests.",
                 icon: "🌱"
               },
               {
                 title: "Quality Enhancement",
-                description: "Improving cube properties like color, texture, and durability through selective breeding.",
+                description: "Improving cube properties through selective breeding and gentle peer pressure. Our enhanced cubes feature richer colors, smoother textures, and improved durability against existential dread. Warning: some cubes may develop superiority complexes during the enhancement process.",
                 icon: "✨"
               },
               {
                 title: "Automation Research",
-                description: "Developing new technologies to automate and optimize cube farming processes.",
+                description: "Creating helpful robot assistants for our cubie teams because even the best farmers need extra hands. Our automation does the heavy lifting while our cubie experts provide the creative genius and emotional support that cubes desperately need to thrive.",
                 icon: "🤖"
               }
             ].map((area, index) => (

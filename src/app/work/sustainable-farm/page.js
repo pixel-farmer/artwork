@@ -42,14 +42,21 @@ export default function SustainableFarm() {
           >
             <h2 className="text-3xl font-bold text-gray-900 mb-6">Green Cube Cultivation</h2>
             <p className="text-gray-600 mb-6 leading-relaxed">
-              Our sustainable farm represents the future of cube farming, combining cutting-edge technology 
-              with eco-friendly practices. We've created a zero-waste operation that produces premium cubes 
-              while protecting the digital environment for future generations.
+            Our sustainable farm represents the future of cube farming, where environmental guilt and geometric perfection 
+            finally shake hands and agree to work together. We&apos;ve created a zero-waste operation that produces premium cubes 
+            while loudly congratulating ourselves for saving the digital environment one pixel at a time.
             </p>
             <p className="text-gray-600 mb-6 leading-relaxed">
-              The facility runs entirely on renewable energy, uses organic cultivation methods, and 
-              implements advanced recycling systems. Every aspect of our operation is designed to minimize 
-              environmental impact while maximizing cube quality and yield.
+            The facility runs entirely on renewable energy harvested from the disappointment of failed crops, uses organic 
+            cultivation methods that our cubes pretend to appreciate, and implements advanced recycling systems that turn 
+            rejected squares into mulch. Every aspect of our operation is designed to minimize environmental impact while 
+            maximizing our ability to feel morally superior about our farming choices.
+            </p>
+            <p className="text-gray-600 mb-6 leading-relaxed">
+            Our cubie workforce has embraced the green lifestyle with enthusiasm, composting geometric failures, carpooling 
+            to work in eco-friendly vehicles, and participating in weekly meditation sessions to reduce their carbon hoofprint. 
+            The cubes themselves have developed an insufferable sense of environmental righteousness, often refusing to 
+            cooperate with farmers who don&apos;t properly sort their recycling.
             </p>
             <div className="flex flex-wrap gap-4">
               <span className="bg-emerald-100 text-emerald-800 px-3 py-1 rounded-full text-sm font-medium">
@@ -70,7 +77,7 @@ export default function SustainableFarm() {
             className="relative h-96 rounded-lg overflow-hidden"
           >
             <Image
-              src="/images/contact.jpg"
+              src="/images/sustainable.jpg"
               alt="Sustainable Cube Farm"
               fill
               className="object-cover"
