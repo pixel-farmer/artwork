@@ -72,7 +72,7 @@ export default function ResearchLab() {
             className="relative h-96 rounded-lg overflow-hidden"
           >
             <Image
-              src="/images/contact.jpg"
+              src="/images/research.jpg"
               alt="Cubie Research Lab"
               fill
               className="object-cover"
