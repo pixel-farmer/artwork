@@ -17,6 +17,9 @@ export const metadata = {
   title: "PixelFarm Industries",
   description: "Farm-fresh cubes, harvested daily by our pixel-perfect cubie team. From basic squares to premium geometric masterpieces - we grow what others can only dream of in 8-bit.",
   viewport: "width=device-width, initial-scale=1",
+};
+
+export const viewport = {
   themeColor: "#ffffff",
 };
 

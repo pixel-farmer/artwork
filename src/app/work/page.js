@@ -31,48 +31,42 @@ export default function Work() {
       title: "Cubie Farm Operations",
       description: "Our main farming facility where we grow and harvest premium cubes. Features automated irrigation systems and sustainable cube cultivation techniques.",
       image: "/images/farm.jpg",
-      category: "Farming",
-      year: "2024"
+      category: "Farming"
     },
     {
       id: 2,
       title: "Voxel Processing Plant",
       description: "State-of-the-art facility where raw cubes are processed into high-quality voxel products. Includes quality control and packaging operations.",
       image: "/images/cubes-rare.jpg",
-      category: "Manufacturing",
-      year: "2024"
+      category: "Manufacturing"
     },
     {
       id: 3,
       title: "Cubie Research Lab",
       description: "Advanced research facility where we develop new cube varieties and improve farming techniques. Home to our experimental cube breeding program.",
       image: "/images/research.jpg",
-      category: "Research",
-      year: "2023"
+      category: "Research"
     },
     {
       id: 4,
       title: "Cube Distribution Center",
       description: "Our logistics hub where cubes are sorted, packaged, and shipped worldwide. Features automated sorting systems and climate-controlled storage.",
       image: "/images/work.jpg",
-      category: "Logistics",
-      year: "2024"
+      category: "Logistics"
     },
     {
       id: 5,
       title: "Cubie Community Center",
       description: "A gathering place for our cubie workers and their families. Includes recreational facilities, dining areas, and educational programs.",
       image: "/images/about.jpg",
-      category: "Community",
-      year: "2023"
+      category: "Community"
     },
     {
       id: 6,
       title: "Sustainable Cube Farm",
       description: "Eco-friendly farming operation using renewable energy and organic cube cultivation methods. Zero-waste processing and carbon-neutral operations.",
       image: "/images/sustainable.jpg",
-      category: "Sustainability",
-      year: "2024"
+      category: "Sustainability"
     }
   ];
 
