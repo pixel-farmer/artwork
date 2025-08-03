@@ -38,7 +38,7 @@ export default function Work() {
       id: 2,
       title: "Voxel Processing Plant",
       description: "State-of-the-art facility where raw cubes are processed into high-quality voxel products. Includes quality control and packaging operations.",
-      image: "/images/about.jpg",
+      image: "/images/cubes-rare.jpg",
       category: "Manufacturing",
       year: "2024"
     },

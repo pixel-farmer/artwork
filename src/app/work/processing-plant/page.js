@@ -79,7 +79,7 @@ export default function ProcessingPlant() {
             className="relative h-96 rounded-lg overflow-hidden"
           >
             <Image
-              src="/images/about.jpg"
+              src="/images/cubes-rare.jpg"
               alt="Voxel Processing Plant"
               fill
               className="object-cover"
