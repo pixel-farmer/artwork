@@ -135,13 +135,14 @@ export default function Home() {
             <h2 className="text-3xl font-bold text-gray-900 mb-6">About Our Cubie Operations</h2>
             <p className="text-gray-600 mb-6 leading-relaxed">
               At PixelFarmer, we&apos;ve revolutionized the art of cube farming. Our dedicated team of cubie workers 
-              operates around the clock, using sustainable farming practices to cultivate the finest geometric specimens 
+              operates around the clock fueled by coffee and fears of rejection, using sustainable and sometimes questionable farming 
+              practices to cultivate the finest geometric specimens 
               in the digital world.
             </p>
             <p className="text-gray-600 mb-6 leading-relaxed">
-              From our state-of-the-art processing facilities to our global distribution network, every aspect of our 
-              operation is designed to deliver premium cubes to customers worldwide while maintaining the highest 
-              standards of quality and sustainability.
+            From our state-of-the-art processing facilities staffed by perfectionist robots to our global distribution network that 
+            loses only 12% of shipments, every aspect of our operation is designed to deliver premium cubes to customers worldwide while 
+            maintaining impossibly high standards and our reputation for geometric excellence.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link 
