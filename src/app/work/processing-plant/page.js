@@ -49,7 +49,7 @@ export default function ProcessingPlant() {
             </p>
             <p className="text-gray-600 mb-6 leading-relaxed">
             The facility features automated assembly lines that occasionally work as intended, robotic quality 
-            nspection systems with trust issues, and advanced packaging operations run by machines that take 
+            inspection systems with trust issues, and advanced packaging operations run by machines that take 
             their jobs way too seriously. Our skilled cubie technicians oversee every step of the process while 
             muttering about &apos;back in my day&apos; and questioning whether cubes have gotten softer over the years.
             </p>
