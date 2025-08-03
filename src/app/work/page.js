@@ -46,7 +46,7 @@ export default function Work() {
       id: 3,
       title: "Cubie Research Lab",
       description: "Advanced research facility where we develop new cube varieties and improve farming techniques. Home to our experimental cube breeding program.",
-      image: "/images/contact.jpg",
+      image: "/images/about.jpg",
       category: "Research",
       year: "2023"
     },
