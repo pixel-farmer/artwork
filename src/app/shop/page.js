@@ -20,19 +20,20 @@ export default function Shop() {
   const products = [
     {
       id: 1,
+      name: "Cubie People NFT Collection",
+      price: 'ETH',
+      image: "/images/pitfall.jpg",
+      category: "Collections",
+      description: "Meet the individual cubie workers behind our farming empire! Each animated cubie has their own personality and is showing off their unique style.",
+      foundationUrl: "https://foundation.app/@Pixel-Farmer"
+    },
+    {
+      id: 2,
       name: "Premium Cubie Collection",
       price: 89.99,
       image: "/images/cubes-premium.jpg",
       category: "Collections",
       description: "Hand-crafted collection of our finest cubie specimens, carefully selected from our farms"
-    },
-    {
-      id: 2,
-      name: "Rare Voxel Varieties",
-      price: 149.99,
-      image: "/images/cubes-rare.jpg",
-      category: "Rare",
-      description: "Exclusive collection of rare and limited-edition voxel cubes from our experimental breeding program"
     },
     {
       id: 3,
@@ -69,7 +70,7 @@ export default function Shop() {
     {
       id: 7,
       name: "Rare Red Cubes",
-      price: 19.99,
+      price: 149.99,
       image: "/images/cubes-rare-red.jpg",
       category: "Rare",
       description: "Rumored to grant wishes, but mostly just sit there being cubical"
@@ -222,18 +223,18 @@ export default function Shop() {
                 <div className="flex items-center justify-between">
                   <span className="text-2xl font-bold text-gray-900">${product.price}</span>
                   <div className="flex space-x-2">
-                    <a
-                      href={`/product/${product.id}`}
-                      className="bg-gray-100 text-gray-900 px-4 py-2 rounded-lg hover:bg-gray-200 transition-colors"
-                    >
-                      View
-                    </a>
-                    <button
-                      onClick={() => addToCart(product)}
-                      className="bg-gray-900 text-white px-4 py-2 rounded-lg hover:bg-gray-800 transition-colors"
-                    >
-                      Add to Cart
-                    </button>
+
+                    {product.foundationUrl && (
+                      <a
+                        href={product.foundationUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="bg-purple-600 text-white px-4 py-2 rounded-lg hover:bg-purple-700 transition-colors"
+                      >
+                        Foundation
+                      </a>
+                    )}
+
                   </div>
                 </div>
               </div>
