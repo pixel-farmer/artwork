@@ -86,7 +86,7 @@ export default function FarmOperations() {
               className="relative h-96 rounded-lg overflow-hidden"
             >
               <Image
-                src="/images/work.jpg"
+                src="/images/farm.jpg"
                 alt="Cubie Farm Operations"
                 fill
                 className="object-cover"

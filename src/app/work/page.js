@@ -30,7 +30,7 @@ export default function Work() {
       id: 1,
       title: "Cubie Farm Operations",
       description: "Our main farming facility where we grow and harvest premium cubes. Features automated irrigation systems and sustainable cube cultivation techniques.",
-      image: "/images/work.jpg",
+      image: "/images/farm.jpg",
       category: "Farming",
       year: "2024"
     },
