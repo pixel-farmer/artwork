@@ -19,19 +19,19 @@ export default function Home() {
   const features = [
     {
       title: "Sustainable Cube Farming",
-      description: "Our cubie people use eco-friendly methods to grow and harvest premium cubes, ensuring the highest quality while protecting the digital environment.",
+      description: "Our cubie people use eco-friendly methods to grow and harvest premium cubes, ensuring the highest quality while our cubes develop insufferable attitudes about being organically cultivated and environmentally conscious.",
       icon: "🌱",
       color: "text-lime-500"
     },
     {
       title: "Advanced Processing",
-      description: "State-of-the-art facilities where raw cubes are transformed into high-quality voxel products using cutting-edge technology.",
+      description: "State-of-the-art facilities where raw cubes are transformed into high-quality voxel products using cutting-edge technology that occasionally works and robots with perfectionist anxiety disorders about geometric precision.",
       icon: "⚙️",
       color: "text-orange-400"
     },
     {
       title: "Global Distribution",
-      description: "Worldwide network ensuring fresh cubes reach customers everywhere, with climate-controlled shipping and real-time tracking.",
+      description: "Worldwide network ensuring fresh cubes reach customers everywhere, with climate-controlled shipping that plays soothing music to anxious cubes and real-time tracking that's accurate 68% of the time.",
       icon: "🌍",
       color: "text-sky-500"
     }
