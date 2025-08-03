@@ -98,11 +98,6 @@ export default function FarmOperations() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="mt-4 text-left"
             >
-                <p className="text-gray-600 mb-6 leading-relaxed">
-                <b>Daily Operations:</b> Our cubie workforce starts each day with mandatory geometry exercises to keep their spatial reasoning 
-                sharp. The morning shift focuses on planting new cube seeds in perfectly aligned rows, while the afternoon crew handles 
-                harvesting mature cubes using specialized extraction tools that definitely don&apos;t look like oversized spatulas.
-              </p>
               <p className="text-gray-600 mb-6 leading-relaxed">
                 <b>Safety Record:</b> Only 3 cube-related injuries this quarter (all minor geometric confusion incidents).
               </p>
