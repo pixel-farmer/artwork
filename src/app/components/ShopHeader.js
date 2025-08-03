@@ -31,7 +31,7 @@ export default function ShopHeader({ cartCount, setIsCartOpen, isCartOpen, curre
               className="relative p-2"
               onClick={() => setIsCartOpen(!isCartOpen)}
             >
-              <img src="/shopping-cart.svg" alt="Shopping Cart" className="w-7 h-7" />
+              <Image src="/shopping-cart.svg" alt="Shopping Cart" width={28} height={28} className="w-7 h-7" />
               {cartCount > 0 && (
                 <span className="absolute -top-1 -right-1 bg-red-500 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">
                   {cartCount}

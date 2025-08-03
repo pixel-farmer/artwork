@@ -48,7 +48,7 @@ export default function CommunityCenter() {
             </p>
             <p className="text-gray-600 mb-6 leading-relaxed">
               The center features recreational facilities, educational programs, dining areas, and spaces 
-              for social gatherings. It's designed to foster a sense of belonging and provide opportunities 
+              for social gatherings. It&apos;s designed to foster a sense of belonging and provide opportunities 
               for personal and professional growth within our cubie community.
             </p>
             <div className="flex flex-wrap gap-4">
