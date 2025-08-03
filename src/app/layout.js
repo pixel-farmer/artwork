@@ -12,8 +12,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "PixelFarmer - Digital Art & Design Store",
-  description: "Discover unique digital creations, AI-generated content, and immersive experiences. Shop for digital art, NFTs, music, and creative tools.",
+  title: "PixelFarm Industries",
+  description: "Farm-fresh cubes, harvested daily by our pixel-perfect cubie team. From basic squares to premium geometric masterpieces - we grow what others can only dream of in 8-bit.",
 };
 
 export default function RootLayout({ children }) {

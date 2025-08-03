@@ -6,6 +6,25 @@ import Link from "next/link";
 import Header from "../components/Header";
 
 export default function Work() {
+  const getProjectLink = (title) => {
+    switch (title) {
+      case "Cubie Farm Operations":
+        return "/work/farm-operations";
+      case "Voxel Processing Plant":
+        return "/work/processing-plant";
+      case "Cubie Research Lab":
+        return "/work/research-lab";
+      case "Cube Distribution Center":
+        return "/work/distribution-center";
+      case "Cubie Community Center":
+        return "/work/community-center";
+      case "Sustainable Cube Farm":
+        return "/work/sustainable-farm";
+      default:
+        return "/work";
+    }
+  };
+
   const projects = [
     {
       id: 1,
@@ -99,28 +118,30 @@ export default function Work() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
+              className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow cursor-pointer"
             >
-              <div className="relative h-48">
-                <Image
-                  src={project.image}
-                  alt={project.title}
-                  fill
-                  className="object-cover"
-                />
-                <div className="absolute top-4 left-4">
-                  <span className="bg-blue-500 text-white px-2 py-1 rounded-full text-xs font-medium">
-                    {project.category}
-                  </span>
+              <Link href={getProjectLink(project.title)}>
+                <div className="relative h-48">
+                  <Image
+                    src={project.image}
+                    alt={project.title}
+                    fill
+                    className="object-cover"
+                  />
+                  <div className="absolute top-4 left-4">
+                    <span className="bg-blue-500 text-white px-2 py-1 rounded-full text-xs font-medium">
+                      {project.category}
+                    </span>
+                  </div>
                 </div>
-              </div>
-              <div className="p-6">
-                <div className="flex justify-between items-start mb-2">
-                  <h3 className="text-xl font-semibold text-gray-900">{project.title}</h3>
-                  <span className="text-sm text-gray-500">{project.year}</span>
+                <div className="p-6">
+                  <div className="flex justify-between items-start mb-2">
+                    <h3 className="text-xl font-semibold text-gray-900">{project.title}</h3>
+                    <span className="text-sm text-gray-500">{project.year}</span>
+                  </div>
+                  <p className="text-gray-600 text-sm leading-relaxed">{project.description}</p>
                 </div>
-                <p className="text-gray-600 text-sm leading-relaxed">{project.description}</p>
-              </div>
+              </Link>
             </motion.div>
           ))}
         </div>
