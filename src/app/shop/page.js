@@ -24,7 +24,7 @@ export default function Shop() {
       price: 'ETH',
       image: "/images/pitfall.jpg",
       category: "Collections",
-      description: "Meet the individual cubie workers behind our farming empire! Each animated cubie has their own personality and is showing off their unique style.",
+      description: "Get to know the Cubie workers behind our farming empire! Each animated Cubie brings their own personality—and flaunts a unique sense of style.",
       foundationUrl: "https://foundation.app/@Pixel-Farmer"
     },
     {
