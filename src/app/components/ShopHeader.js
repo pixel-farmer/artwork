@@ -1,18 +1,33 @@
 "use client";
 
+import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
 const logo = "/pixel-farmer-logo.jpg";
 
 export default function ShopHeader({ cartCount, setIsCartOpen, isCartOpen, currentPage = "shop" }) {
+  const [imageError, setImageError] = useState(false);
+  const [cartImageError, setCartImageError] = useState(false);
+
   return (
     <header className="bg-white shadow-sm sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           <div className="flex items-center">
-            <Link href="/" className="">
-              <Image src={logo} alt="PixelFarmer Logo" width={300} height={40} />
+            <Link href="/" className="flex items-center">
+              {!imageError ? (
+                <Image 
+                  src={logo} 
+                  alt="PixelFarmer Logo" 
+                  width={300} 
+                  height={40}
+                  onError={() => setImageError(true)}
+                  priority
+                />
+              ) : (
+                <span className="text-xl font-bold text-gray-900">PixelFarmer</span>
+              )}
             </Link>
           </div>
           <nav className="hidden md:flex space-x-8">
@@ -31,7 +46,20 @@ export default function ShopHeader({ cartCount, setIsCartOpen, isCartOpen, curre
               className="relative p-2"
               onClick={() => setIsCartOpen(!isCartOpen)}
             >
-              <Image src="/shopping-cart.svg" alt="Shopping Cart" width={28} height={28} className="w-7 h-7" />
+              {!cartImageError ? (
+                <Image 
+                  src="/shopping-cart.svg" 
+                  alt="Shopping Cart" 
+                  width={28} 
+                  height={28} 
+                  className="w-7 h-7"
+                  onError={() => setCartImageError(true)}
+                />
+              ) : (
+                <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 3h2l.4 2M7 13h10l4-8H5.4m0 0L7 13m0 0l-2.5 5M7 13l2.5 5m6-5v6a2 2 0 01-2 2H9a2 2 0 01-2-2v-6m6 0V9a2 2 0 00-2-2H9a2 2 0 00-2 2v4.01" />
+                </svg>
+              )}
               {cartCount > 0 && (
                 <span className="absolute -top-1 -right-1 bg-red-500 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">
                   {cartCount}
