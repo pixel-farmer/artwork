@@ -42,14 +42,19 @@ export default function CommunityCenter() {
           >
             <h2 className="text-3xl font-bold text-gray-900 mb-6">Building Strong Communities</h2>
             <p className="text-gray-600 mb-6 leading-relaxed">
-              Our community center is the heart of cubie life, providing a space where workers and their 
-              families can gather, learn, and grow together. We believe that happy cubies make better 
-              cubes, and this facility reflects our commitment to their well-being and development.
+            Our community center is the heart of cubie life, providing a space where workers and their families can gather, 
+            complain about cube quotas, and participate in mandatory fun activities. We believe that happy cubies make better 
+            cubes (and file fewer HR complaints), so this facility reflects our commitment to their well-being and our legal liability concerns.
             </p>
             <p className="text-gray-600 mb-6 leading-relaxed">
-              The center features recreational facilities, educational programs, dining areas, and spaces 
-              for social gatherings. It&apos;s designed to foster a sense of belonging and provide opportunities 
-              for personal and professional growth within our cubie community.
+            The center features recreational facilities where cubies can play geometric sports, educational programs teaching advanced cube 
+            appreciation, dining areas serving exclusively square meals, and spaces for social gatherings that definitely aren&apos;t union meetings. 
+            It&apos;s designed to foster a sense of belonging while subtly discouraging any thoughts of career changes or cube farming alternatives.
+            </p>
+            <p className="text-gray-600 mb-6 leading-relaxed">
+            Popular amenities include the &apos;Cube Therapy Corner&apos; for workers experiencing geometric burnout, weekly support groups for cubies 
+            whose crops didn&apos;t meet expectations, and a meditation garden where stressed farmers can contemplate the meaning of perfect angles. 
+            The facility also hosts our annual &apos;Cubie Olympics&apos; featuring thrilling competitions like speed-stacking and competitive cube-measuring.
             </p>
             <div className="flex flex-wrap gap-4">
               <span className="bg-teal-100 text-teal-800 px-3 py-1 rounded-full text-sm font-medium">
