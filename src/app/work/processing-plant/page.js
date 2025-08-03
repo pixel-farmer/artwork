@@ -42,14 +42,23 @@ export default function ProcessingPlant() {
           >
             <h2 className="text-3xl font-bold text-gray-900 mb-6">Advanced Cube Processing</h2>
             <p className="text-gray-600 mb-6 leading-relaxed">
-              Our processing plant transforms raw cubes into premium voxel products using cutting-edge 
-              technology and precision engineering. Every cube undergoes rigorous quality control and 
-              processing to meet our exacting standards.
+            Our processing plant transforms raw cubes into premium voxel products using cutting-edge technology 
+            and an alarming amount of anxiety about geometric perfection. Every cube undergoes rigorous quality 
+            control, existential questioning, and a thorough background check to meet our impossibly exacting 
+            standards that we&apos;re constantly changing.
             </p>
             <p className="text-gray-600 mb-6 leading-relaxed">
-              The facility features automated assembly lines, robotic quality inspection systems, and 
-              advanced packaging operations. Our skilled cubie technicians oversee every step of the 
-              process to ensure consistent quality and optimal performance.
+            The facility features automated assembly lines that occasionally work as intended, robotic quality 
+            nspection systems with trust issues, and advanced packaging operations run by machines that take 
+            their jobs way too seriously. Our skilled cubie technicians oversee every step of the process while 
+            muttering about &apos;back in my day&apos; and questioning whether cubes have gotten softer over the years.
+            </p>
+            <p className="text-gray-600 mb-6 leading-relaxed">
+            The processing journey includes multiple stages of cube counseling, geometric realignment therapy, 
+            and a final &apos;confidence boost&apos; treatment where cubes are told they&apos;re special before being shipped 
+            off into an uncertain world. Our quality control team has developed an impressive ability to find 
+            flaws invisible to the naked eye, leading to heated philosophical debates about what constitutes cube 
+            perfection.
             </p>
             <div className="flex flex-wrap gap-4">
               <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">
