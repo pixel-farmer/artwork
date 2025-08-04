@@ -29,19 +29,20 @@ export default function Shop() {
     },
     {
       id: 2,
+      name: "Our First Cube",
+      price: 'ETH',
+      image: "/images/one-big-cube.jpg",
+      category: "Collections",
+      description: "The cube that started it all - patient zero of the geometric revolution. Currently enjoying celebrity status while mentoring the next generation of cubes in the ancient art of being perfectly cubic.",
+      zoraurl: "https://zora.co/coin/base:0x09f5db8ab806345067fffa94d54cbf68b712db2c?referrer=0x73856db0d1d135f5b88922b329676e5b30d79e48"
+    },
+    {
+      id: 3,
       name: "Premium Cubie Collection",
       price: 89.99,
       image: "/images/cubes-premium.jpg",
       category: "Collections",
       description: "Hand-crafted collection of our finest cubie specimens, carefully selected from our farms"
-    },
-    {
-      id: 3,
-      name: "Cubie Farming Starter Kit",
-      price: 24.99,
-      image: "/images/cubes-farming-kit.jpg",
-      category: "Kits",
-      description: "Everything you need to disappoint your neighbors with strange geometric crops"
     },
     {
       id: 4,
@@ -85,12 +86,12 @@ export default function Shop() {
     },
     {
       id: 9,
-      name: "One Big Cube",
-      price: 129.99,
-      image: "/images/one-big-cube.jpg",
-      category: "Collections",
-      description: "For when regular cubes just aren't compensating for whatever you're compensating for"
-    }
+      name: "Cubie Farming Starter Kit",
+      price: 24.99,
+      image: "/images/cubes-farming-kit.jpg",
+      category: "Kits",
+      description: "Everything you need to disappoint your neighbors with strange geometric crops"
+    },
   ];
 
   const categories = ["All", "Collections", "Rare", "Kits", "Tools", "Apparel"];
@@ -232,6 +233,17 @@ export default function Shop() {
                         className="bg-purple-600 text-white px-4 py-2 rounded-lg hover:bg-purple-700 transition-colors"
                       >
                         Foundation
+                      </a>
+                    )}
+
+                    {product.zoraurl && (
+                      <a
+                        href={product.zoraurl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors"
+                      >
+                        Zora
                       </a>
                     )}
 
