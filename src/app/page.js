@@ -236,12 +236,11 @@ export default function Home() {
               </ul>
             </div>
             <div>
-              <h4 className="font-semibold mb-4">Products</h4>
+              <h4 className="font-semibold mb-4">Social</h4>
               <ul className="space-y-2 text-gray-300">
-                <li><Link href="/shop" className="hover:text-white">Shop</Link></li>
-                <li><Link href="/product/1" className="hover:text-white">Collections</Link></li>
-                <li><Link href="/product/2" className="hover:text-white">Rare Cubes</Link></li>
-                <li><Link href="/product/3" className="hover:text-white">Farming Kits</Link></li>
+                <li><Link href="https://x.com/lawn_walker" className="hover:text-white">X.com</Link></li>
+                <li><Link href="https://www.instagram.com/pixelfarmerdesigns/" className="hover:text-white">Instagram</Link></li>
+                <li><Link href="https://www.youtube.com/@pixel-farmer" className="hover:text-white">YouTube</Link></li>
               </ul>
             </div>
             <div>
