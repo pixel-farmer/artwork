@@ -33,7 +33,7 @@ export default function Shop() {
       price: 'ETH',
       image: "/images/one-big-cube.jpg",
       category: "Collections",
-      description: "The cube that started it all. The founding father of our cubic empire.",
+      description: "The cube that started it all — the original specimen that made cube farming seem like a legitimate career choice.",
       zoraurl: "https://zora.co/coin/base:0x09f5db8ab806345067fffa94d54cbf68b712db2c?referrer=0x73856db0d1d135f5b88922b329676e5b30d79e48"
     },
     {
